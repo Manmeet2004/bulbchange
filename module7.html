@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Lightbulb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Interactive Lightbulb</h1>
+    
+    <!-- Lightbulb Element -->
+    <div id="lightbulb"></div>
+
+    <!-- Input and Buttons for controlling the lightbulb -->
+    <div>
+        <input type="text" id="colorInput" placeholder="Enter a color">
+        <button onclick="changeColor(document.getElementById('colorInput').value)">Set Color</button>
+    </div>
+
+    <div>
+        <button onclick="dimLight(0.5)">Dim Light</button>
+        <button onclick="dimLight(1)">Reset Brightness</button>
+    </div>
+
+    <div>
+        <button onclick="flashLight(500)">Flash Light (500ms)</button>
+        <button onclick="stopFlashing()">Stop Flashing</button>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
